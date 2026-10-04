@@ -69,6 +69,10 @@ function App() {
 
       </a>
 
+      <a href="/projects" onClick={() => setMenuOpen(false)}>
+  Projects
+</a>
+
 
 
       <a href="#pricing" onClick={() => setMenuOpen(false)}>

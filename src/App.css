@@ -2488,3 +2488,126 @@ a {
   }
 
 }
+
+/* =========================
+   PROJECTS PAGE
+========================= */
+
+.projects-page {
+  min-height: 100vh;
+  background: #0f172a;
+  color: #ffffff;
+  padding-bottom: 80px;
+}
+
+.projects-hero {
+  padding: 120px 0 70px;
+  text-align: center;
+}
+
+.projects-hero h1 {
+  font-size: 56px;
+  line-height: 1.1;
+  margin: 18px 0;
+}
+
+.projects-hero h1 span {
+  color: #8b5cf6;
+}
+
+.projects-hero p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #cbd5e1;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.projects-list {
+  padding: 20px 0 80px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+.project-card {
+  background: #111827;
+  border: 1px solid #263244;
+  border-radius: 20px;
+  padding: 32px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  border-color: #8b5cf6;
+}
+
+.project-category {
+  display: inline-block;
+  color: #a78bfa;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 14px;
+}
+
+.project-card h2 {
+  font-size: 28px;
+  margin-bottom: 14px;
+}
+
+.project-card p {
+  color: #cbd5e1;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.project-tech span {
+  padding: 7px 11px;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  color: #e2e8f0;
+  font-size: 13px;
+}
+
+.project-live-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 20px;
+  background: #7c3aed;
+  color: #ffffff;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+}
+
+.project-live-button:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .projects-hero {
+    padding: 90px 20px 50px;
+  }
+
+  .projects-hero h1 {
+    font-size: 40px;
+  }
+
+  .project-card {
+    padding: 24px;
+  }
+}
