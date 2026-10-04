@@ -1,5 +1,6 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import Projects from "./Projects";
 
 import "./App.css";
 
@@ -7,6 +8,10 @@ import "./App.css";
 function App() {
 
   const [menuOpen, setMenuOpen] = useState(false);
+
+  if (window.location.pathname === "/projects") {
+  return <Projects />;
+}
 
   return (
     <div className="portfolio">
